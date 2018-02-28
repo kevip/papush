@@ -1,0 +1,99 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Menú</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <!-- <ion-list>
+    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
+      <ion-icon [name]="item.icon" item-start></ion-icon>
+      {{item.title}}
+      <div class="item-note" item-end>
+        {{item.note}}
+      </div>
+    </button>
+  </ion-list> -->
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12>
+        <ion-card>
+          <img src="assets/imgs/aji-de-gallina.png"/>
+          <ion-card-content>
+            <ion-card-title>
+              Ají de Gallina
+              </ion-card-title>
+            <p>
+              El lomo saltado es un plato típico de la gastronomía del Perú cuyos registros datan de fines del siglo XIX, donde se le conocía como «lomito de vaca», «lomito saltado» o «lomito a la chorrillana».1​ Este plato es uno de los más consumidos popularmente en el Perú.
+            </p>
+            <ion-row>
+              <ion-col center text-center>
+                <ion-note>S/.12.00</ion-note>
+              </ion-col>
+              <ion-col center text-center>
+                <button ion-button icon-left clear small>
+                  <ion-icon name="md-add"></ion-icon>
+                  <div>Agregar</div>
+                </button>
+              </ion-col>
+            </ion-row>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col col-12>
+        <ion-card>
+          <img src="assets/imgs/arroz-con-mariscos.jpg"/>
+          <ion-card-content>
+            <ion-card-title>
+              Arroz con maríscos
+              </ion-card-title>
+            <p>
+              Se le conoce con el nombre de arroz a la marinera​ y emula a la típica paella española. Poseer ingredientes tales como calamares, camarones, almejas, pepitonas (en algunos casos) y trozos de pescado. En su preparación en lugar de agua se usa caldo de pescado. Se puede servir con zumo de limón al gusto.
+            </p>
+          </ion-card-content>
+          <ion-row>
+              <ion-col center text-center>
+                <ion-note>S/.12.00</ion-note>
+              </ion-col>
+              <ion-col center text-center>
+                <button ion-button icon-left clear small>
+                  <ion-icon name="md-add"></ion-icon>
+                  <div>Agregar</div>
+                </button>
+              </ion-col>
+            </ion-row>
+        </ion-card>
+      </ion-col>
+      <ion-col col-12>
+        <ion-card>
+          <img src="assets/imgs/lomo-saltado.jpg"/>
+          <ion-card-content>
+            <ion-card-title>
+              Lomo Saltado
+              </ion-card-title>
+            <p>
+              El lomo saltado es un plato típico de la gastronomía del Perú cuyos registros datan de fines del siglo XIX, donde se le conocía como «lomito de vaca», «lomito saltado» o «lomito a la chorrillana».1​ Este plato es uno de los más consumidos popularmente en el Perú.
+            </p>
+          </ion-card-content>
+          <ion-row>
+              <ion-col center text-center>
+                <ion-note>S/.12.00</ion-note>
+              </ion-col>
+              <ion-col center text-center>
+                <button ion-button icon-left clear small>
+                  <ion-icon name="md-add"></ion-icon>
+                  <div>Agregar</div>
+                </button>
+              </ion-col>
+            </ion-row>
+        </ion-card>
+      </ion-col>      
+    </ion-row>
+  </ion-grid>
+  <div *ngIf="selectedItem" padding>
+    You navigated here from <b>{{selectedItem.title}}</b>
+  </div>
+</ion-content>
